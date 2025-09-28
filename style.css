@@ -1,0 +1,275 @@
+/* Reset básico e configurações de fonte */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* Habilita a rolagem suave para todo o documento, 
+     útil para o link "Veja meus projetos" */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+/* Estilo base para todas as seções */
+section {
+  padding: 80px 20px;
+  min-height: 50vh;
+}
+
+/* --- Estilos da Navegação --- */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 30px;
+  background-color: rgba(26, 26, 26, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  text-align: center;
+}
+
+nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 20px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #42b883;
+}
+
+/* --- Estilos da Seção Hero --- */
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+#hero p {
+  font-size: 1.5rem;
+  color: #a0a0a0;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #42b883;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #369a6e;
+}
+
+/* --- Estilos da Seção Sobre Mim --- */
+#sobre {
+  background-color: #242424;
+}
+
+.sobre-content {
+  display: flex;
+  flex-direction: column; /* Layout vertical */
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 4px solid #42b883;
+  object-fit: cover;
+}
+
+.about-text {
+  max-width: 600px; /* Aumentei um pouco para melhor leitura */
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.social-links a {
+  margin: 0 10px; /* Ajustei a margem */
+  color: #42b883;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #f0f0f0;
+}
+
+/* --- Estilos da Seção Projetos --- */
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: flex;
+  flex-direction: column; /* Layout vertical */
+  align-items: center;
+  gap: 40px; /* Aumentei o espaço entre os projetos */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: #242424;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 700px; /* Largura máxima maior para o layout de coluna única */
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.project-card img {
+  width: 100%;
+  height: 350px; /* Aumentei a altura da imagem */
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 25px;
+}
+
+.project-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.project-tags {
+  margin-bottom: 20px;
+}
+
+.project-tags span {
+  background-color: #333;
+  color: #42b883;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  margin-right: 5px;
+  display: inline-block; /* Garante espaçamento correto */
+  margin-bottom: 5px;
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* Permite que botões quebrem a linha em telas pequenas */
+}
+
+.cta-button.secondary {
+  background-color: transparent;
+  border: 2px solid #42b883;
+}
+
+.cta-button.secondary:hover {
+  background-color: #42b883;
+  color: #fff;
+}
+
+.cta-button.disabled {
+  background-color: #555;
+  cursor: not-allowed;
+  border-color: #555;
+}
+.cta-button.disabled:hover {
+  background-color: #555;
+}
+
+/* --- Estilos da Seção Contato --- */
+#contato {
+  background-color: #242424;
+  text-align: center;
+}
+
+.contato-subtitulo {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.contato-email a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #42b883;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contato-email a:hover {
+  color: #fff;
+}
+
+.social-links-contato {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.social-links-contato a {
+  color: #f0f0f0;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.social-links-contato a:hover {
+  color: #42b883;
+}
+
+/* --- Estilos do Rodapé --- */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: #888;
+}
