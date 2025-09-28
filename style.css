@@ -236,7 +236,7 @@ nav a:hover {
 }
 
 .contato-email a {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   font-weight: bold;
   color: #42b883;
   text-decoration: none;
@@ -266,7 +266,7 @@ nav a:hover {
   color: #42b883;
 }
 
-/* --- Estilos do Rodapé --- */
+
 footer {
   text-align: center;
   padding: 20px;
